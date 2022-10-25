@@ -209,7 +209,7 @@ main {
 
 #cards {
   min-height: 100vh;
-  gap: 1;
+  padding-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
