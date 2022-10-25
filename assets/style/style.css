@@ -143,29 +143,33 @@ justify-content: space-around;
   
   
   
+  
 
 }
 
 #main1 input {
   margin-left: 20px;
+  border: 4px solid blue;
 }
 
 .main2 {
   background-color: rgb(255, 161, 207);
-  height: 8rem;
- width: 50rem;
+ 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+ 
  
   
  
 }
 
 .main2 label {
-  margin-right: 50px;
   display: flex;
-  padding-left: 6px;
+ padding-bottom: 15px;
+  
+  
+  
 }
 
 .main2 input {
@@ -198,6 +202,7 @@ main {
   min-width: 100vh;
   display: flex;
   
+  flex-direction: column;
  
 }
 
@@ -387,7 +392,7 @@ footer p {
 }
 
 .formulario1 input {
-  width: 40rem;
+  min-width: 100vh;
 }
 
 .formulario {
@@ -410,8 +415,8 @@ footer p {
 .botoncito {
 
   display: flex;
-  justify-content: flex-end;
-  padding-right: 5px;
+  
+  
   padding-top: 9px;
 }
 
@@ -455,27 +460,29 @@ table {
 
 .content3 {
   padding-top: 2rem;
+  
 }
 
 .content4 {
   padding-top: 2rem;
+  min-width: 100vh;
 }
 
 .header12 {
   background-color: rgb(255, 116, 177);
-  width: 84.3rem;
+  min-width: 100vh;
 }
 
 
 .header13 {
 
-  width: 84.3rem;
+  min-width: 100vh;
   display: flex;
   justify-content: space-between;
 }
 
 .header17{
-  width: 84.3rem;
+ min-width: 100vh;
 }
 
 
@@ -549,17 +556,18 @@ td {
 
 
   .header, .header3{
-    width: 50rem
+    min-width: 10vh;
   }
 
 
   .header2{
     min-height: 10vh;
-    width: 2rem;
+    min-width: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid red;
+    
+    
     
   }
 
@@ -572,7 +580,7 @@ td {
   .contenedor1 {
 
     display: flex;
-    width: 48rem;
+    min-width: 10vh;
     height: 10rem;
     background-color: rgb(255, 161, 207);
 
@@ -591,13 +599,13 @@ display: flex;
 align-items: center;
 justify-content: center;
     height: 2rem;
-   
+   width: 2rem;
   }
 
   .main2 input{
     padding-left: 3rem;
     
-    width: 17rem;
+    width: 14rem;
   }
 
   .formulario1{
@@ -634,11 +642,17 @@ display: flex;
   }
 
   .header12,
-  .header13,
-  .header17 {
-    min-width: 100vh;
+  .header13
+   {
+    width: 48rem;
   }
 
+  .content4{
+    width: 48rem;
+  }
+  .header17{
+    width: 48rem;
+  }
   .logo7 {
     width: 100px;
     height: 50px;
@@ -658,49 +672,6 @@ display: flex;
   }
 }
 
-@media  (max-width:1200px) {
-
-  .header,.header2,
-  .header3,
-  .contenedor1,
-  footer,.main1 {
-    width: 63.5rem;
-    
-  }
-
-  .contenedor1{
-   background-color: rgb(255, 161, 207);
-    min-width: 100vh;
-    height: 8rem;
-    display: flex;
-    justify-content: space-around;
-    
-
-  }
-#check{
- 
-  width: 31rem;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-right: 10rem;
-}
-.main2{
-  width: 20rem
-}
-
-.main2 input{
-  display: flex;
-}
-
-.cards, main, footer{
-  width: 63.5rem;
-}
-
-
-}
-
 
 
 @media  (max-width:425px) {
@@ -709,7 +680,7 @@ display: flex;
   .header2,
   .header3,
   .contenedor1,
-  footer {
+  footer,.header7, .header17, .header12, .header13 {
     min-width: 100vh;
   }
 
@@ -735,8 +706,8 @@ display: flex;
     min-width: 100vh;
   }
 
-  .formulario1 input {
-    min-width: 100vh;
+  .formulario1 label{
+   width: 20rem;
   }
 
   .botoncito {
@@ -744,8 +715,16 @@ display: flex;
   }
 
   .formulario1 {
-    height: 40rem;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
   }
+
+  
+  
 
   .cards5 {
     min-width: 100vh;
@@ -798,3 +777,43 @@ display: flex;
     flex-direction: column;
   }
 }
+
+
+@media  (max-width:485px) {
+
+.header2, .header3, .header{
+  min-width: 100vh;
+}
+
+}
+
+@media  (max-width:495px) {
+
+  .header2, .header3, .header{
+    min-width: 100vh;
+  }
+  
+  }
+  @media  (max-width:525px) {
+
+    .header2, .header3, .header{
+      min-width: 100vh;
+    }
+    
+    }
+
+    @media  (max-width:537px) {
+
+      .header2, .header3, .header{
+        min-width: 100vh;
+      }
+      
+      }
+
+      @media  (max-width:555px) {
+
+        .header2, .header3, .header{
+          min-width: 100vh;
+        }
+        
+        }
